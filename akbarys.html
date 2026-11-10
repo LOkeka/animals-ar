@@ -2,17 +2,17 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Akbarys — AR</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ақбарыс — AR</title>
 <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
 <style>
 body{margin:0;font-family:sans-serif}
-model-viewer{width:100vw;height:100vh}
-#ar{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);padding:14px 28px;border:0;border-radius:30px;background:#ff7a00;color:#fff;font-size:18px}
+model-viewer{width:100vw;height:100dvh}
+#ar{position:absolute;bottom:calc(80px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);padding:14px 28px;border:0;border-radius:30px;background:#ff7a00;color:#fff;font-size:18px}
 </style>
 </head>
 <body>
-<model-viewer src="akbarys.glb" alt="Akbarys" ar ar-modes="webxr scene-viewer quick-look" camera-controls auto-rotate shadow-intensity="1">
+<model-viewer src="akbarys.glb" alt="Ақбарыс" ar ar-modes="webxr scene-viewer quick-look" camera-controls auto-rotate shadow-intensity="1">
 <button slot="ar-button" id="ar">Посмотреть в AR</button>
 </model-viewer>
 </body>
